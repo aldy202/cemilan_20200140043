@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pembelian</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Nota Pembelian</div>
+        <hr>
+        <table border="1" cellpadding="5">
+            <tr>
+                <td rowspan="2" bgcolor="yellow">Perhitungan</td>
+                <td bgcolor="#FFEE58">Nama Item</td>
+                <td bgcolor="#FFEE58">Jumlah</td>
+                <td bgcolor="#FFEE58">Harga Perkilo</td>
+                <td bgcolor="#FFEE58">Total harga</td>
+            </tr>
+            <tr>
+                <td th:text="${sayur}"></td>
+                <td th:text="${jmlbeli}"></td>
+                <td th:text="${hargakilo}"></td>
+                <td th:text="${hargaawal}"></td>
+            </tr>
+            <tr>
+                 <td>Jumlah Diskon</td>
+                 <td colspan="4"th:text="${diskon}"></td>
+            </tr>
+            <tr>
+                 <td>Total Harga diskon</td>
+                 <td colspan="4"th:text="${totaldk}"></td>
+            </tr>
+            <tr>
+                <td>Harga Total yang dibayar</td>
+                <td colspan="4"th:text="${total}"></td>
+            </tr>
+            <tr>
+                <td>Uang Costomer</td><!-- comment -->
+                <td colspan="4"th:text="${costomer}"></td>
+            </tr>
+            <tr>
+                <td colspan="5" th:text="${kembali}"></td>
+            </tr>
+            
+        </table>
+        
+    </body>
+</html>
